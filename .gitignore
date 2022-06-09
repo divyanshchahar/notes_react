@@ -6,3 +6,4 @@ notes/*nio
 notes/*.out
 notes/*.blg
 notes/*.log
+notes/*.nlo
