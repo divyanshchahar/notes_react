@@ -1,0 +1,123 @@
+\documentclass[twoside,12pt]{report}  % type of Documents
+
+
+%_____________________________________________PACKAGES___________________________________________
+\usepackage[utf8]{inputenc} 						% input encoding [utf8]
+\usepackage[english]{babel} 						% setting spell-check for English
+\usepackage{geometry} 								% for page margins
+\usepackage{fancyhdr} 								% for header and footer
+\usepackage{url} 									% package to include urls
+\usepackage{datetime} 								% For inserting date and time
+\usepackage{graphicx} 								% For inserting graphics
+\usepackage{float} 									% for accurate placement of figures and tables
+\usepackage[labelfont=bf,textfont=bf]{caption} 		% for having the captions in bold
+\usepackage{amsmath} 								%for equations
+\usepackage[hidelinks]{hyperref} 					% for adding hyperlinks (withouht ugly boxes)
+\usepackage{nomencl} 								% For Nomenclature 
+\makenomenclature
+\usepackage{amssymb} 								% symbols for nomenclature
+\usepackage{etoolbox} 								% For Creating Categories in Nomenclature
+\usepackage{caption} 								% For subfigures
+\usepackage{subcaption} 							% For subfigures
+\usepackage[compact]{titlesec} 						% For Headings
+\usepackage{tcolorbox}								% For boxed text
+\usepackage{pdfpages}                               % For Inserting PDFs
+\usepackage{minted}
+
+%________________________________________________________________________________________________
+
+
+%______________________PAGE GEOMETRY_____________________________
+
+\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm,includeheadfoot}
+
+%________________________________________________________________
+
+
+%_____________________________HEADER AND FOOTER_______________________
+
+\pagestyle{fancy}
+\fancyhf{} 
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\lfoot{Divyansh Chahar}
+\cfoot{\thepage}
+\rfoot{JavaScript}
+
+%_____________________________________________________________________
+
+
+%____________________________________________NOMENCLATURE____________________________
+\renewcommand\nomgroup[1]{%
+	\ifstrequal{#1}{A}{\item[\Large\bfseries{Greek Characters}]}{%
+		\ifstrequal{#1}{B}{\vspace{10pt} \item[\Large\bfseries{Roman Characters}]}{%
+			\ifstrequal{#1}{C}{\vspace{10pt} \item[\Large\bfseries{Acronyms}]}{}}}%
+}
+%____________________________________________________________________________________
+
+%_________________CHAPTER________________
+\titleformat{\chapter}[hang]
+{\bfseries\huge\sc}
+{\arabic{chapter}\hspace{0.3cm}$\vert$}
+{0.3cm}
+{\Huge}
+
+\titlespacing{\chapter}{0cm}{0cm}{1cm}
+%________________________________________
+
+
+%__________CODE SNIPPETS_______________
+
+\usemintedstyle[JavaScript]{stata-dark}
+\definecolor{myjsbackground}{RGB}{35, 38, 41}
+
+%_______________________________________
+
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}} % to include section numbers in figures
+%%%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE BEGINS %
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\begin{titlepage}
+		\newgeometry{a4paper,top=3cm,bottom=1cm,right=3cm,left=3cm} % Setting Page Dimensions
+		\begin{center}
+			{\LARGE \textbf{React}}\\
+			
+			\hrulefill
+			
+			\textbf{My Guide to React} 
+			
+			\null
+			
+			Divyansh Chahar
+			
+			\vfill
+			
+			\href{https://www.linkedin.com/in/divyanshchahar/}{\includegraphics[width=0.25\linewidth]{./images/icons/my_qrcode.eps}}
+			
+			\null
+			
+			\href{https://www.linkedin.com/in/divyanshchahar/}{\includegraphics[width=0.025\linewidth]{./images/icons/linkedin_logo.eps}}
+			\href{https://www.linkedin.com/in/divyanshchahar/}{https://www.linkedin.com/in/divyanshchahar/}
+			
+			\null
+			
+			\href{https://www.linkedin.com/in/divyanshchahar/}{\includegraphics[width=0.025\linewidth]{./images/icons/github_mark.eps}}
+			\href{https://github.com/divyanshchahar}{https://github.com/divyanshchahar}
+			
+			\vfill
+			
+			\today
+			
+		\end{center}
+	\end{titlepage}
+	
+	\restoregeometry
+	
+	
+	\bibliographystyle{ieeetr}
+	\bibliography{myrefrences}
+	
+\end{document}
