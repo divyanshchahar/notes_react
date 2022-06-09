@@ -1,0 +1,8 @@
+notes/*.aux
+notes/*.bbl
+notes/images/icons/*.pdf
+notes/*.gz
+notes/*nio
+notes/*.out
+notes/*.blg
+notes/*.log
