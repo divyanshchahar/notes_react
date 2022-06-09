@@ -1,10 +1,10 @@
-import StateFunctionalComponenet from "./components/01_stateless_functional_componene";
+import NestedComponent from "./components/02_nested_components_03";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <StateFunctionalComponenet />
+      <NestedComponent />
     </>
   );
 }
