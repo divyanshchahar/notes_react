@@ -23,5 +23,3 @@ const PeopleList = () => {
 };
 
 ReactDOM.render(<PeopleList />, document.getElementById("root"));
-
-ReactDOM.render(<PeopleList />, document.getElementById("root"));
