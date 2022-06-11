@@ -7,3 +7,5 @@ notes/*.out
 notes/*.blg
 notes/*.log
 notes/*.nlo
+
+dev_notes.md
