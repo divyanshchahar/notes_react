@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useFetch } from "./10_custom_hooks_2";
 
-const url = "https://course-api.com/javascript-store-products";
+const url = "https://api.sampleapis.com/coffee/iced";
 
 const CustomHook = () => {
   const { loading, products } = useFetch(url);
-  console.log(products);
   return (
-    <div>
-      <h2>{loading ? "loading..." : "data"}</h2>
-    </div>
+    <>
+      <h1>{loading ? "Coffe is brewing ...." : "Today's Menu"}</h1>;
+      {products.map((product) => {
+        console.log(product);
+        return <h4 key={product.id}>{product.title}</h4>;
+      })}
+    </>
   );
 };
 
