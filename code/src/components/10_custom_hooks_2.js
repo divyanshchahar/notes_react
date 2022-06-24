@@ -5,9 +5,11 @@ export const useFetch = (url) => {
   const [products, setProducts] = useState([]);
 
   const getProducts = async () => {
-    const response = await fetch(url);
-    const products = await response.json();
-    setProducts(products);
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data.data);
+      });
     setLoading(false);
   };
 
