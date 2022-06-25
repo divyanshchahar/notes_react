@@ -1,0 +1,92 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": "BannerToken_001_Cattus",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_001_cattus/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_002_Doggus",
+      "name": "Mecha Team Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_002_doggus/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_003_2019WorldCup",
+      "name": "World Cup 2019 Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_003_2019worldcup/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_004_Oak",
+      "name": "Vault Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_004_oak/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_005_BlackMonday",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_005_blackmonday/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_006_StormKing",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_006_stormking/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_007_S11_TreeSymbol",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_007_s11_treesymbol/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_008_S11_DiamondShapes",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_008_s11_diamondshapes/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_009_S11_EightBall",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_009_s11_eightball/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_010_S11_Toadstool",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_010_s11_toadstool/icon.png"
+      }
+    },
+    {
+      "id": "BannerToken_011_S11_Pawmark",
+      "name": "Banner",
+      "description": "A new icon for your banner. Assign it in the Locker.",
+      "images": {
+        "icon": "https://fortnite-api.com/images/cosmetics/br/bannertoken_011_s11_pawmark/icon.png"
+      }
+    }
+  ]
+}
